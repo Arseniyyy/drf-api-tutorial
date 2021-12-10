@@ -1,3 +1,9 @@
+from django.contrib import admin
+from django.urls import path
+from cars.views import CarCreateView
 
 
-urlpatterns = []
+app_name = 'car'
+urlpatterns = [
+    path('car/create/', CarCreateView.as_view())
+]

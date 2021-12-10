@@ -14,7 +14,7 @@ from pathlib import Path
 
 from drf_api_tutorial.config import (POSTGRES_HOST, POSTGRES_NAME,
                                      POSTGRES_PASSWORD, POSTGRES_PORT,
-                                     POSTGRES_URL, POSTGRES_USER)
+                                     POSTGRES_USER)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -42,7 +42,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'cars',
-    'rest_framework'
+    'rest_framework',
+    'rest_framework.authtoken',
+    'rest_auth'
 ]
 
 MIDDLEWARE = [
